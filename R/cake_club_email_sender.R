@@ -1,8 +1,8 @@
 
-cake = function {
-  
+cake = function(){
+
   library(mailR)
-  
+
   cake_club_list<-read.csv("https://docs.google.com/spreadsheets/d/178L66__gbAHL8w8yZRZaIIVm7RtkYSVnYVo5oz_IB_g/export?format=csv")
 
 Date_today=(Sys.Date())
@@ -19,7 +19,6 @@ name=temp$Name
 name
 Email=temp$Email
 Email
-Email='harithmorgadinho@gmail.com'
 email_text= paste('Hi ',name,', this is just a friendly reminder that tomorrow is your turn to bring cake :). Here is a list if you need inspiration: https://www.taste.com.au/baking/articles/top-50-cakes/4zag3onm,
                   - The cake bot',sep = "")
 
